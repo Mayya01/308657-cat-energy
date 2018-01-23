@@ -1,0 +1,27 @@
+.page-header__wrapper {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.page-header__logo {
+  min-height: 66px;
+  position: relative;
+  padding: 0 20px;
+  border-bottom: 1px solid $colorGray;
+}
+.page-header__logo-cat {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.page-header__logo-name {
+  position: absolute;
+  left: 50%;
+  top: 22px;
+  transform: translateX(-50%);
+}
+.page-header__toggle {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
