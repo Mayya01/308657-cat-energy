@@ -1,0 +1,24 @@
+.contacts-info__cooperation {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-info__title {
+  margin: 0;
+  width: 50%;
+}
+.contacts-info__our-address {
+  font-size: 14px;
+  line-height: 1.43;
+  font-family: $arialFont;
+  margin: 0;
+  width: 50%;
+}
+.contacts-info__map {
+  width: 100%;
+}
+.contacts-info__map  iframe {
+  width: 100%;
+  height: 362px;
+}

@@ -1,0 +1,40 @@
+.social-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 18px;
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+  }
+  &--vk {
+    width: 23px;
+    height: 12px;
+    &::before {
+      background: url(../img/icon-vk-mobile.svg) no-repeat;
+      width: 23px;
+      height: 12px;
+    }
+  }
+  &--in {
+    width: 16px;
+    height: 16px;
+    &::before {
+      background: url(../img/icon-insta-mobile.svg) no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+    &--fb {
+    width: 10px;
+    height: 19px;
+    &::before {
+      background: url(../img/icon-fb-mobile.svg) no-repeat;
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
