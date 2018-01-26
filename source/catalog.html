@@ -5,22 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper container">
+    <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <a href="#" class="page-header__logo-cat"><img src="http://placehold.it/150x100"></a>
-        <a href="#" class="page-header__logo-name"><img src="http://placehold.it/150x100"></a>
+        <a href="#" class="page-header__logo-cat"><img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотоп-кот"></a>
+        <a href="#" class="page-header__logo-name">
+          <img src="img/logo-mobile-header.svg" width="102" height="20" alt="Логотоп-название"></a>
       </div>
       <!--<h1 class="page-header__title">Cat Energy</h1>-->
       <button class="navigation-toggle page-header__toggle"><span></span></button>
       <nav class="navigation">
-        <div class="navigation__wrapper container">
+        <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item"><a href="#">Главная</a></li>
-            <li class="navigation__item"><a href="#">Каталог продукции</a></li>
+            <li class="navigation__item"><a href="catalog.html">Каталог продукции</a></li>
             <li class="navigation__item"><a href="#">Подбор программы</a></li>
           </ul>
         </div>
@@ -34,12 +36,12 @@
       </div>
     </section>
     <section class="all-items">
-      <div class="all-items__wrapper container">
+      <div class="all-items__wrapper">
         <div class="all-items__main-block">
           <article class="catalog-item">
             <div class="catalog-item__wrapper">
               <a href="#" class="catalog-item__img">
-                <img src="http://placehold.it/150x100">
+                <img src="img/chicken-small-mobile@1x.jpg">
               </a>
               <div class="catalog-item__details">
                 <a href="#" class="catalog-item__name">
@@ -63,7 +65,9 @@
                 </table>
               </div>
             </div>
-            <a href="#" class="btn catalog-item__btn">Заказать</a>
+            <div class="catalog-item__btn-wrapper">
+              <a href="#" class="btn catalog-item__btn">Заказать</a>
+            </div>
           </article>
           <article class="catalog-item">
             <div class="catalog-item__wrapper">
@@ -305,16 +309,16 @@
   </main>
   <footer class="page-footer">
     <section class="contacts-info page-footer__contacts">
-        <div class="contacts-info__cooperation container">
-          <h4 class="contacts-info__title h4-title">приглашаем к сотрудничеству дилеров!
-          </h4>
-          <p class="contacts-info__our-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-        </div>
-        <div class="contacts-info__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6016956090355!2d30.321259396820277!3d59.93875118712452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516477134442" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </section>
+      <div class="contacts-info__cooperation container">
+        <h4 class="contacts-info__title h4-title">приглашаем к сотрудничеству дилеров!
+        </h4>
+        <p class="contacts-info__our-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <div class="contacts-info__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6016956090355!2d30.321259396820277!3d59.93875118712452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516477134442" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
     <div class="page-footer__social-info container">
       <section class="page-footer__logo">
         <a href="#"><img src="http://placehold.it/150x100"></a></section>

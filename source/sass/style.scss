@@ -2,8 +2,8 @@
 @import 'variables.scss';
 @import 'btn.scss';
 @import 'page-header.scss';
-@import 'index/navigation-toggle.scss';
-@import 'index/navigation.scss';
+@import 'navigation-toggle.scss';
+@import 'navigation.scss';
 @import 'index/main-info.scss';
 @import 'index/programs.scss';
 @import 'index/features.scss';
@@ -12,3 +12,6 @@
 @import 'contacts-info.scss';
 @import 'social-links.scss';
 @import 'social-link.scss';
+@import 'title.scss';
+@import 'catalog/catalog-item.scss';
+@import 'catalog/all-items.scss';

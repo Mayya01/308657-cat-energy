@@ -1,0 +1,34 @@
+.catalog-item {
+  padding: 15px 0;
+  border-top: 1px solid $borderGrayColor;
+
+}
+
+.catalog-item__wrapper {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.catalog-item__img {
+  //display: inline-block;
+  //vertical-align: middle;
+  //width: 45%;
+}
+.catalog-item__details {
+  //display: inline-block;
+  //vertical-align: middle;
+  //width: 45%;
+}
+
+.catalog-item__name {
+  text-decoration: none;
+  color: $textColor;
+}
+
+.catalog-item__title {
+  font-weight: 400;
+  margin: 0;
+}
+.catalog-item__btn-wrapper {
+  padding: 0 20px;
+}
