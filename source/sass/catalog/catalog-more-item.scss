@@ -1,0 +1,17 @@
+.catalog-more-item {
+  padding: 12px 0 15px 0;
+  border-top: 1px solid $borderGrayColor;
+}
+
+.catalog-more-item__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  letter-spacing: -0.2px;
+}
+.catalog-more-item__table  {
+  margin-bottom: 10px;
+  td {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
