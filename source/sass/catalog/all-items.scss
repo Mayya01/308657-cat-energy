@@ -74,7 +74,7 @@
 
 .all-items__presents-picture {
   height: 100%;
-  background: url(../../img/gift-photo-mobile@1x.jpg) no-repeat;
+  background: url(../img/gift-photo-mobile@1x.jpg) no-repeat;
   display: flex;
   padding: 20px 20px 50px 20px;
 }
@@ -92,7 +92,7 @@
   &::before {
     position: absolute;
     content: '';
-    background: url(../../img/icon-gift.svg) no-repeat;
+    background: url(../img/icon-gift.svg) no-repeat;
     width: 60px;
     height: 60px;
     top: -122px;
