@@ -1,22 +1,24 @@
+@import 'normalize.scss';
 @import 'variables.scss';
 @import 'global.scss';
-@import 'btn.scss';
-@import 'page-header.scss';
-@import 'navigation-toggle.scss';
-@import 'navigation.scss';
-@import 'index/main-info.scss';
-@import 'index/programs.scss';
-@import 'index/features.scss';
-@import 'index/examples.scss';
-@import 'page-footer.scss';
-@import 'contacts-info.scss';
-@import 'social-links.scss';
-@import 'social-link.scss';
-@import 'title.scss';
-@import 'catalog/catalog-item.scss';
-@import 'catalog/all-items.scss';
-@import 'catalog/table-info.scss';
-@import 'catalog/catalog-more-item.scss';
-@import 'form/order.scss';
-@import 'form/order-form.scss';
+@import 'blocks/btn.scss';
+@import 'blocks/page-header.scss';
+@import 'blocks/navigation-toggle.scss';
+@import 'blocks/navigation.scss';
+@import 'blocks/index/main-info.scss';
+@import 'blocks/index/programs.scss';
+@import 'blocks/index/features.scss';
+@import 'blocks/index/examples.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/contacts-info.scss';
+@import 'blocks/social.scss';
+@import 'blocks/title.scss';
+@import 'blocks/catalog/catalog-item.scss';
+@import 'blocks/catalog/all-items.scss';
+@import 'blocks/catalog/table-info.scss';
+@import 'blocks/catalog/catalog-more-item.scss';
+@import 'blocks/form/order.scss';
+@import 'blocks/form/order-form.scss';
+
+
 

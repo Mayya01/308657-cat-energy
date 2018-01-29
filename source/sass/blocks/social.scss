@@ -1,4 +1,12 @@
-.social-link {
+.social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $borderGrayColor;
+  border-top: 1px solid $borderGrayColor;
+  text-align: center
+}
+
+.social__link {
   display: inline-block;
   text-decoration: none;
   font-size: 0;
@@ -28,7 +36,7 @@
       height: 16px;
     }
   }
-    &--fb {
+  &--fb {
     width: 10px;
     height: 19px;
     &::before {
