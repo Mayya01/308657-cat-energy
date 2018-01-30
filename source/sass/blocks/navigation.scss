@@ -26,3 +26,15 @@
     text-decoration: none;
   }
 }
+@media(min-width:768px) {
+  .navigation__list {
+    display: flex;
+  }
+  .navigation__item {
+    font-size: 18px;
+    line-height: 1.38;
+    border: none;
+    padding: 10px 16px;
+    min-height: 0;
+  }
+}
