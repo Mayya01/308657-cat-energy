@@ -1,15 +1,15 @@
 .catalog-item {
   padding: 20px 0 25px 0;
   border-top: 1px solid $borderGrayColor;
-
 }
 
 .catalog-item__wrapper {
- display: flex;
+  display: flex;
   padding: 0 20px;
   justify-content: space-between;
   margin-bottom: 12px;
 }
+
 .catalog-item__img {
   position: relative;
   overflow: hidden;
@@ -19,6 +19,7 @@
     top: -18px;
   }
 }
+
 .catalog-item__details {
   width: 51%;
 }
@@ -36,6 +37,7 @@
   margin: 0;
   padding-right: 50px;
 }
+
 .catalog-item__btn-wrapper {
   padding: 0 20px;
 }
