@@ -13,3 +13,9 @@
     color: $textColor;
   }
 }
+@media(min-width:768px) {
+  .btn {
+    font-size: 20px;
+    line-height: 1;
+  }
+}

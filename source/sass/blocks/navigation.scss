@@ -29,12 +29,17 @@
 @media(min-width:768px) {
   .navigation__list {
     display: flex;
+    justify-content: flex-end;
+  }
+  .navigation {
+    width: 70%;
+    margin-right: -17px
   }
   .navigation__item {
     font-size: 18px;
     line-height: 1.38;
     border: none;
-    padding: 10px 16px;
+    padding: 10px 17px;
     min-height: 0;
   }
 }
