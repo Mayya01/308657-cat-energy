@@ -1,0 +1,146 @@
+.order-form {
+  padding-bottom: 30px;
+}
+.order-form__slogan {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.29;
+  padding: 0 20px;
+}
+
+.order-form__section {
+  padding: 0 20px;
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.order-form__section-wrapper {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.order-form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.125;
+  padding: 10px 12px 0px 0;
+  color: #444444;
+}
+
+.order-form__block {
+  padding: 24px 0 18px 0;
+  border-bottom: 1px solid $colorGray;
+  & > :last-child {
+    margin-bottom: 0;
+  }
+  &--no-border {
+    border: none;
+    padding-bottom: 5px;
+  }
+}
+
+.order-form__text {
+  border: 1px solid $colorGray;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  min-width: 170px;
+  width: 230px;
+  font-size: 16px;
+  line-height: 1.125;
+  color: #444444;
+  font-family: inherit;
+
+}
+
+.order-form__radio {
+  display: none;
+  position: relative;
+  &:checked + label::after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    left: 8px;
+    top: 8px;
+    height: 13px;
+    background-color: $mainGreenColor;
+    border-radius: 50%;
+  }
+
+}
+
+.order-form__label-radio {
+  position: relative;
+  display: block;
+  padding: 5px 0 10px 45px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 0px;
+    border: 1px solid $colorGray;
+    border-radius: 50%;
+  }
+}
+
+.order-form__title {
+  text-transform: none;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.order-form__textarea {
+  width: 100%;
+  border: 1px solid $colorGray;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.125;
+  padding: 10px 12px 0px 0;
+  color: #444444;
+  padding: 10px 5px;
+  height: 150px;
+  font-family: inherit;
+}
+.order-form__checkbox {
+  display: none;
+  &:checked+label::after {
+    position: absolute;
+    content: '';
+    background: url(../img/icon-tick.svg) no-repeat;
+    width: 21px;
+    height: 17px;
+    left: 5px;
+    top: 5px;
+  }
+}
+.order-form__label-checkbox {
+  padding: 7px 5px 7px 45px;
+  position: relative;
+  display: block;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $colorGray;
+    left: 0;
+    top: 0;
+
+  }
+}
+.order-form__btn {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.order-form__required {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.14;
+  font-family: $arialFont;
+  margin-bottom: 0;
+}

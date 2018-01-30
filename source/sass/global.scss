@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', 'Source Sans Pro', sans-serif;
+  margin: 0;
+  min-width: 320px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.h3-title {
+  font-size: 24px;
+  line-height: 1.54;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-weight: 400;
+  &--icon {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      left: 0;
+      display: block;
+      border-bottom: 3px solid $mainGreenColor;
+      left: 0;
+      right: -20px;
+      top: 16px;
+    }
+  }
+  span {
+    position: relative;
+    z-index: 10;
+    padding-right: 15px;
+    background-color: #ffffff;
+  }
+}
+
+
+.h2-title {
+  font-size: 36px;
+  line-height: 1.66;
+  font-weight: 400;
+}
+
+.h4-title {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/oswaldregular.woff') format('woff'), url('../fonts/oswaldregular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/oswaldmedium.woff') format('woff'), url('../fonts/oswaldmedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
