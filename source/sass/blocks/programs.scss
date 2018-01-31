@@ -8,7 +8,7 @@
   margin-bottom: 20px;
 }
 
-.programs__wrapper {
+.programs__item {
   position: relative;
   &::before {
     position: absolute;
@@ -17,8 +17,8 @@
     height: 50px;
     background-color: $mainGreenColor;
     border-radius: 50%;
-    left: 2px;
-    top: -5px;
+    left: 23px;
+    top: 23px;
   }
   &::after {
     content: '';
@@ -30,8 +30,8 @@
       background: url(../img/icon-cat-slim.svg) no-repeat;
       height: 65px;
       width: 32px;
-      top: -5px;
-      left: 9px;
+      top: 25px;
+      left: 33px;
     }
   }
   &--gain-weight {
@@ -39,8 +39,9 @@
       background: url(../img/icon-cat-pro.svg) no-repeat;
       height: 28px;
       width: 66px;
-      top: 5px;
-      left: -4px;
+      left: 15px;
+      top: 35px;
+      ;
     }
   }
 }
@@ -74,6 +75,18 @@
   line-height: 1;
   display: block;
   padding-top: 20px;
+  span {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      background: url(../img/icon-right-arrow-long.svg) no-repeat;
+      width: 24px;
+      height: 20px;
+      left: 98px;
+      top: 5px;
+    }
+  }
 }
 
 @media(min-width:768px) {
@@ -81,36 +94,55 @@
     font-size: 36px;
     line-height: 1;
     padding-left: 0;
+    margin-bottom: 26px;
   }
   .programs {
     margin-top: 5px;
   }
   .programs__item {
-    padding: 80px 60px 20px 50px;
-  }
-  .programs__wrapper {
+    margin-bottom: 26px;
+    padding: 80px 60px 60px 50px;
     &::before {
       width: 200px;
       height: 200px;
-      right: 0;
+      right: 60px;
       left: auto;
-      top: 15px;
+      top: 95px;
     }
     &--lost-weight {
       &::after {
-        height: 140px;
-        width: 195px;
-        top: -5px;
-        right: 0;
+        height: 195px;
+        width: 141px;
+        top: 83px;
+        right: 95px;
         left: auto;
       }
     }
     &--gain-weight {
       &::after {
-        height: 28px;
-        width: 66px;
-        top: 5px;
-        left: -4px;
+        height: 113px;
+        width: 267px;
+        top: 135px;
+        right: 25px;
+        left: auto;
+      }
+    }
+  }
+  .programs__text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 220px;
+  }
+  .programs__wrapper {
+    border: none;
+  }
+  .programs__link {
+    font-size: 20px;
+    span {
+      &::after {
+        left: 133px;
+        top: 10px;
+
       }
     }
   }
