@@ -32,3 +32,22 @@
   width: 100%;
   height: 362px;
 }
+
+@media(min-width:768px) {
+  .contacts-info__cooperation {
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+  .contacts-info__title {
+    padding: 0 155px 0 40px;
+  }
+  .contacts-info__our-address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    padding: 0 40px 0 130px;
+  }
+  .contacts-info__map iframe {
+    height: 396px;
+  }
+}

@@ -1,22 +1,26 @@
 .page-footer__social-info {
   text-align: center;
 }
+
 .page-footer__logo {
   padding-top: 30px;
   padding-bottom: 28px;
 }
+
 .page-footer__copyright {
   padding-top: 25px;
   padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
 }
+
 .page-footer__name {
   font-size: 16px;
   line-height: 1;
   font-family: $arialFont;
   padding-top: 5px;
 }
+
 .page-footer__link-logo {
   font-size: 0;
   text-decoration: none;
@@ -24,4 +28,32 @@
   width: 27px;
   height: 33px;
   display: block;
+}
+
+@media(min-width:768px) {
+  .page-footer__social-info {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    padding: 60px 30px;
+  }
+  .page-footer__logo,
+  .page-footer__copyright {
+    padding: 0;
+  }
+  .page-footer__logo {
+    width: 19%;
+  }
+  .page-footer__copyright {
+    width: 23%;
+  }
+  .page-footer__name {
+    padding-top: 15px;
+    margin-right: 10px;
+  }
+  .page-footer__link-logo {
+    margin-top: 10px;
+  }
+
+
 }
