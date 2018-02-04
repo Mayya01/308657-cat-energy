@@ -3,12 +3,27 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .title__main {
   font-size: 36px;
-  margin: 0;
-  letter-spacing: -1px;
+  margin: 0; //letter-spacing: -1px;
   font-weight: 100;
 }
+
 .title {
-  padding: 15px 0 34px 0;
+  padding: 25px 0 40px 0;
+}
+
+@media(min-width:768px) {
+  .title__main {
+    font-size: 60px;
+    line-height: 1;
+  }
+  .title__wrapper {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+  .title {
+    padding: 35px 0 25px 0;
+  }
 }
