@@ -6,12 +6,20 @@
 .catalog-more-item__title {
   margin-top: 0;
   margin-bottom: 8px;
-  letter-spacing: -0.2px;
 }
 .catalog-more-item__table  {
   margin-bottom: 10px;
   td {
     font-size: 14px;
     line-height: 1;
+  }
+}
+@media(min-width:768px) {
+  .catalog-more-item {
+    padding: 25px 35px;
+    border-right: 1px solid $borderGrayColor;
+     border-left: 1px solid $borderGrayColor;
+  }
+  .catalog-more-item__title {
   }
 }
