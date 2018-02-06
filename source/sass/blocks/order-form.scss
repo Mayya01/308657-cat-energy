@@ -1,6 +1,7 @@
 .order-form {
   padding-bottom: 30px;
 }
+
 .order-form__slogan {
   margin-top: 0;
   text-transform: uppercase;
@@ -103,9 +104,10 @@
   height: 150px;
   font-family: inherit;
 }
+
 .order-form__checkbox {
   display: none;
-  &:checked+label::after {
+  &:checked + label::after {
     position: absolute;
     content: '';
     background: url(../img/icon-tick.svg) no-repeat;
@@ -115,6 +117,7 @@
     top: 5px;
   }
 }
+
 .order-form__label-checkbox {
   padding: 7px 5px 7px 45px;
   position: relative;
@@ -131,16 +134,82 @@
 
   }
 }
+
 .order-form__btn {
   width: 100%;
   border: none;
   font-size: 16px;
   line-height: 1.25;
 }
+
 .order-form__required {
   text-align: center;
   font-size: 14px;
   line-height: 1.14;
   font-family: $arialFont;
   margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+  .order-form {
+    padding-top: 30px;
+  }
+  .order-form__slogan {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 285px 0 45px;
+  }
+  .order-form__section {
+    padding: 0 37px 0 44px;
+    margin-bottom: 20px
+  }
+  .order-form__label {
+    font-size: 20px;
+    line-height: 1;
+    padding: 12px 18px 0 0;
+  }
+  .order-form__block {
+    padding: 49px 0 18px 0;
+    border: none;
+    &--sections-intend {
+      padding-left: 44px;
+      padding-right: 37px;
+    }
+  }
+  .order-form__text {
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px 15px;
+    width: 566px;
+    min-width: 495px;
+  }
+  .order-form__label-radio {
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: -17px;
+      top: 0px;
+    }
+  }
+  .order-form__radio {
+    &:checked + label::after {
+      width: 18px;
+      height: 18px;
+      left: -5px;
+      top: 10px;
+    }
+  }
+  .order-form__label-radio {
+    padding: 10px 15px 10px 44px;
+  }
+  .order-form__border-wrapper {
+    border: 1px solid $colorGray;
+    padding: 25px 24px;
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .order-form__section-wrapper {
+    margin-bottom: 12px;
+  }
 }

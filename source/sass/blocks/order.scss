@@ -2,3 +2,9 @@
     max-width: 320px;
     margin: 0 auto;
 }
+@media(min-width:768px) {
+  .order__wrapper {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+}

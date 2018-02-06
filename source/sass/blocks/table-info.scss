@@ -4,7 +4,6 @@
     font-family: $arialFont;
     font-size: 12px;
     line-height: 1.3;
-    text-align: left;
   }
   td {
     &:first-child {
@@ -19,11 +18,7 @@
 
 @media(min-width:768px) {
   .table-info {
-    width: 100%;
     border-collapse: collapse;
-    tr {
-      border-bottom: 1px solid #cdcdcd;
-    }
     td {
       font-size: 16px;
       line-height: 1;

@@ -107,4 +107,11 @@
     font-size: 16px;
     line-height: 1.25;
   }
+  .catalog-item__table-info {
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
 }

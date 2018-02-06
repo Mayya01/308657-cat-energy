@@ -73,8 +73,7 @@
 .all-items__presents-picture {
   height: 100%;
   background: url(../img/gift-photo-mobile@1x.jpg) no-repeat;
-  display: flex;
-  padding: 20px 20px 50px 20px;
+  padding: 188px 20px 50px 20px;
 }
 
 .all-items__presents-text {
@@ -84,7 +83,8 @@
   margin-bottom: 0;
   text-align: center;
   padding: 0 30px;
-  margin-top: auto;
+  margin: 0;
+  font-family: $arialFont;
   line-height: 1.1;
   &::before {
     position: absolute;
@@ -162,5 +162,29 @@
   }
   .all-items__more-title {
     margin-bottom: 80px;
+  }
+  .all-items__presents {
+    padding: 70px 0 75px 0;
+  }
+  .all-items__presents-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+    border: none;
+    height: 200px;
+  }
+  .all-items__presents-picture {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 74px 123px 60px 420px;
+  }
+  .all-items__presents-text {
+    text-align: left;
+    padding: 0;
+    &::before {
+      top: -10px;
+      left: -180%;
+    }
   }
 }
