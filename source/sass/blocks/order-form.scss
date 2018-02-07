@@ -41,6 +41,12 @@
   }
 }
 
+.order-form__border-wrapper {
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
 .order-form__text {
   border: 1px solid $colorGray;
   padding: 12px 15px;
@@ -90,6 +96,11 @@
   text-transform: none;
   line-height: 1;
   margin-top: 0;
+  &--two-words {
+    > span {
+      width: 200px;
+    }
+  }
 }
 
 .order-form__textarea {
@@ -169,9 +180,9 @@
     padding: 12px 18px 0 0;
   }
   .order-form__block {
-    padding: 49px 0 18px 0;
+    padding: 51px 0 19px 0;
     border: none;
-    &--sections-intend {
+    &--intend {
       padding-left: 44px;
       padding-right: 37px;
     }
@@ -211,5 +222,26 @@
   }
   .order-form__section-wrapper {
     margin-bottom: 12px;
+    &--title {
+      padding: 0;
+    }
+  }
+  .order-form__title {
+    margin-bottom: 80px;
+    &--two-words {
+      > span {
+        width: auto;
+        padding: 0 40px;
+      }
+    }
+  }
+  .order-form__textarea {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px 17px;
+    height: 172px;
+  }
+  .order-form__textarea-wrapper {
+    padding: 0 40px;
   }
 }
