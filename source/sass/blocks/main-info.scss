@@ -71,3 +71,21 @@
     padding: 17px 28px;
   }
 }
+@media(min-width:1300px) {
+  .main-info__wrapper {
+    max-width: 1300px;
+    padding: 0 30px;
+    position: relative;
+    outline: 1px solid red;
+  }
+  .main-info__background-container {
+    background-image: url(../img/index-background-mobile@1x.jpg);
+    background-size: 680px 694px;
+    width: 680px;
+    height: 694px;
+    position: absolute;
+    right: -70px;
+    top: -135px;
+    z-index: -1;
+  }
+}

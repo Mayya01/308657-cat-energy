@@ -26,6 +26,7 @@
     text-decoration: none;
   }
 }
+
 @media(min-width:768px) {
   .navigation__list {
     display: flex;
@@ -41,5 +42,14 @@
     border: none;
     padding: 10px 17px;
     min-height: 0;
+  }
+}
+
+@media(min-width:1300px) {
+  .navigation__item {
+    font-size: 20px;
+    a {
+      color: $whiteTextColor;
+    }
   }
 }
