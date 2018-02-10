@@ -163,12 +163,14 @@
 
 @media(min-width:768px) {
   .order-form {
-    padding-top: 30px;
+    padding-top: 32px;
+    padding-bottom: 70px;
   }
   .order-form__slogan {
     font-size: 20px;
     line-height: 1.5;
     padding: 0 285px 0 45px;
+    margin-bottom: 15px;
   }
   .order-form__section {
     padding: 0 37px 0 44px;
@@ -180,11 +182,25 @@
     padding: 12px 18px 0 0;
   }
   .order-form__block {
-    padding: 51px 0 19px 0;
+    padding: 53px 0 0px 0;
     border: none;
-    &--intend {
+    &--second-block {
       padding-left: 44px;
       padding-right: 37px;
+    }
+    &--first-block,
+    &--second-block {
+      padding-bottom: 19px;
+    }
+    &--no-border {
+      padding-bottom: 10px;
+    }
+    &--last-block {
+      padding-top: 15px;
+      .order-form__section-wrapper {
+        display: flex;
+        padding: 0 40px;
+      }
     }
   }
   .order-form__text {
@@ -234,6 +250,9 @@
         padding: 0 40px;
       }
     }
+    &--intend {
+      margin-bottom: 55px;
+    }
   }
   .order-form__textarea {
     font-size: 20px;
@@ -243,5 +262,38 @@
   }
   .order-form__textarea-wrapper {
     padding: 0 40px;
+  }
+  .order-form__label-checkbox {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .order-form__label-checkbox {
+    padding:  10px 5px 10px 60px;
+  }
+  .order-form__checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 35px;
+    .order-form__section-wrapper {
+      padding: 0;
+      width: 42%;
+      margin-right: 25px;
+      margin-bottom: 32px;
+    }
+  }
+  .order-form__btn {
+    padding: 15px;
+    font-size: 20px;
+    width: 44.5%;
+    font-family: inherit;
+    line-height: 1;
+    margin-right: 60px;
+  }
+  .order-form__required {
+    font-size: 16px;
+    line-height: 1;
   }
 }
