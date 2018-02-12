@@ -130,3 +130,25 @@
     margin-bottom: 50px;
   }
 }
+@media(min-width:1300px) {
+  .features {
+    margin-top: 75px;
+  }
+  .features__list {
+    margin-left: -40px;
+    margin-right: -40px;
+    > li {
+      margin: 0 40px;
+      width: 18.8%;
+
+    }
+    > li {
+      &:nth-child(2n) {
+        margin-right: 40px;
+      }
+    }
+  }
+  .features__item  {
+    padding-right: 20px;
+  }
+}
