@@ -69,7 +69,7 @@
 
 @media(min-width:768px) {
   .features__wrapper {
-      border-bottom: 1px solid $colorGray;
+    border-bottom: 1px solid $colorGray;
   }
   .features__item {
     width: 45%;
@@ -130,9 +130,13 @@
     margin-bottom: 50px;
   }
 }
+
 @media(min-width:1300px) {
   .features {
     margin-top: 75px;
+  }
+  .features__wrapper {
+    border: none;
   }
   .features__list {
     margin-left: -40px;
@@ -140,6 +144,9 @@
     > li {
       margin: 0 40px;
       width: 18.8%;
+      &:last-child {
+        margin-bottom: 0;
+      }
 
     }
     > li {
@@ -148,7 +155,7 @@
       }
     }
   }
-  .features__item  {
+  .features__item {
     padding-right: 20px;
   }
 }
