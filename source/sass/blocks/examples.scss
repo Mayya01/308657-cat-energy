@@ -144,12 +144,28 @@
   .examples {
     margin-top: 20px;
   }
+  .examples__checked-area {
+    border: none;
+    background-color:transparent;
+    width: 430px;
+    margin: 0 22px;
+  }
+  .examples__radio:checked + .examples__btn  {
+    position: static;
+    &::before {
+      display: none;
+    }
+  }
   .examples__wrapper {
     max-width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
     padding-bottom: 0;
 
+  }
+  .examples__btn {
+    font-size: 20px;
+    line-height: 1;
   }
   .examples__text {
     font-size: 16px;
@@ -205,6 +221,7 @@
     top: -170px;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
     img {
       display: inline-block;
       width: 40%;
@@ -235,6 +252,10 @@
     max-width: 768px;
     margin: 0 auto;
     padding: 0 40px 255px 40px;
+  }
+  .examples__before-after {
+    width: 81%;
+    margin: 0 auto;
   }
 }
 
