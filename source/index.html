@@ -21,7 +21,7 @@
       <nav class="navigation">
         <div class="navigation__wrapper">
           <ul class="navigation__list">
-            <li class="navigation__item"><a >Главная</a></li>
+            <li class="navigation__item"><a>Главная</a></li>
             <li class="navigation__item"><a href="catalog.html">Каталог продукции</a></li>
             <li class="navigation__item"><a href="form.html">Подбор программы</a></li>
           </ul>
@@ -32,20 +32,24 @@
   <main>
     <section class="main-info">
       <div class="main-info__wrapper">
-        <h1 class="main-info__title">Функциональное питание для котов </h1>
-        <p class="main-info__slogan">Занялся собой? Займись котом!</p>
-        <div class="main-info__img">
-          <img src="img/index-can-mobile@1x.png" alt="Питание для котов" width="280" height="270">
-        </div> <a href="#" class="btn">Подобрать программу</a>
+        <div class="main-info__background-container"></div>
+        <div class="main-info__content-wrapper">
+          <h1 class="main-info__title">Функциональное питание для котов </h1>
+          <p class="main-info__slogan">Занялся собой? Займись котом!</p>
+          <div class="main-info__img">
+            <img src="img/index-can-mobile@1x.png" alt="Питание для котов" width="280" height="270">
+          </div> <a href="#" class="btn main-info__btn">Подобрать программу</a>
+        </div>
         <div class="programs">
-          <div class="programs__item">
+
+          <div class="programs__item programs__item--lost-weight">
             <div class="programs__wrapper">
-              <h3 class="programs__title programs__title--lost-weight h3-title">Похудение</h3>
+              <h3 class="programs__title h3-title">Похудение</h3>
               <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             </div> <a href="#" class="programs__link programs__link--has-icon"><span>Каталог Slim</span></a> </div>
-          <div class="programs__item">
+          <div class="programs__item programs__item--gain-weight">
             <div class="programs__wrapper">
-              <h3 class="programs__title programs__title--gain-weight h3-title">Набор массы</h3>
+              <h3 class="programs__title  h3-title">Набор массы</h3>
               <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             </div> <a href="#" class="programs__link programs__link--has-icon"><span>Каталог pro</span></a> </div>
         </div>
@@ -55,42 +59,59 @@
       <div class="features__wrapper container">
         <h2 class="features__title h2-title">Как это работает</h2>
         <ul class="features__list">
-          <li class="features__item features__item--leaflet">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="features__item features__item--water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="features__item features__item--fork">Замените один-два приема обычной еды на наше фунцкциональное питание.</li>
-          <li class="features__item features__item--alarm">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="features__item features__item--leaflet">
+            <div>Функциональное питание содержит только полезные питательные вещества.</div><span>1</span></li>
+          <li class="features__item features__item--water">
+            <div>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</div><span>2</span></li>
+          <li class="features__item features__item--fork">
+            <div>Замените один-два приема обычной еды на наше фунцкциональное питание.</div><span>3</span></li>
+          <li class="features__item features__item--alarm">
+            <div>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</div><span>4</span></li>
         </ul>
       </div>
     </section>
-    <section class="examples">
+    <section class="examples ">
       <div class="examples__wrapper">
-        <div class="container">
-          <h2 class="examples__title h2-title">Живой пример</h2>
-          <p class="examples__text"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="examples__results">
-            <div class="examples__result">
-              <div class="examples__result-info examples__result-info--weight"> <span>5 кг</span> <span>снижение веса</span> </div>
+        <div class="examples__all-info-wrapper">
+          <div class="examples__flex-wrapper">
+            <div class="examples__text-wrapper">
+              <h2 class="examples__title h2-title">Живой пример</h2>
+              <p class="examples__text"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+              <div class="exapmles__inner">
+                <div class="examples__results">
+                  <div class="examples__result">
+                    <div class="examples__result-info examples__result-info--weight"> <span>5 кг</span> <span>снижение веса</span> </div>
+                  </div>
+                  <div class="examples__result">
+                    <div class="examples__result-info examples__result-info--time"> <span>60 дней</span> <span>затрачено времени</span> </div>
+                  </div>
+                </div>
+                <div class="examples__total">
+                  <div class="examples__price">
+                    <div><span>Затраты на питание: </span><span>15 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="examples__result">
-              <div class="examples__result-info examples__result-info--time"> <span>60 дней</span> <span>затрачено времени</span> </div>
+            <div class="examples__picture-result-wrapper">
+              <div class="exapmles__picture">
+                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот" class="exapmles__picture-before">
+                <img src="img/after-mobile@1x.png" width="320" height="240" alt="Толстый кот" class="exapmles__picture-after">
+              </div>
+              <div class="examples__before-after">
+                <input type="radio" id="before" name="cat" class="examples__radio" checked>
+                <label class="examples__btn examples__btn--before" for="before" class="examples__label">Было</label>
+                <div class="examples__checked-area range">
+                    <div class="range__scale">
+                    </div>
+                    <div class="range__toggle"></div>
+
+                </div>
+                <input class="examples__radio" type="radio" id="after" name="cat">
+                <label class="examples__btn examples__btn--after" for="after" class="examples__label">Стало</label>
+              </div>
             </div>
           </div>
-          <div class="examples__total">
-            <div class="examples__price">
-              <div>Затраты на питание: 15 000 руб.</div>
-            </div>
-          </div>
-        </div>
-        <div class="exapmles__picture">
-          <img src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
-        </div>
-        <div class="examples__before-after">
-          <label class="examples__btn examples__btn--before" for="before">Было</label>
-          <div class="examples__radio-wrapper">
-            <input type="radio" id="before" name="cat">
-            <input type="radio" id="after" name="cat">
-          </div>
-          <label type="button" class="examples__btn examples__btn--after" for="after">Стало</label>
         </div>
       </div>
     </section>

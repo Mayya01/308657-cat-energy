@@ -1,0 +1,33 @@
+@media(min-width:768px) {
+  .range {
+    position: relative;
+  }
+  .range__scale {
+    height: 6px;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    width: 430px;
+  }
+  .range__toggle {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 33px;
+    height: 34px;
+    background-color: #ffffff;
+    border: 1px solid $borderGrayColor;
+    border-radius: 50%;
+    top: -15px;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color:$mainGreenColor;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      top:13px;
+    }
+  }
+}

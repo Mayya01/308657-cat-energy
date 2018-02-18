@@ -46,3 +46,37 @@
     }
   }
 }
+
+@media(min-width:768px) {
+  .social {
+    border: none;
+    padding: 0;
+    width: 21%;
+  }
+  .social__link {
+    margin: 0 15px;
+
+    &--vk {
+      &::before {
+        width: 31px;
+        height: 16px;
+      }
+
+
+    }
+    &--in {
+      &::before {
+        width: 23px;
+        height: 23px;
+      }
+    }
+    &--fb {
+      &::before {
+        width: 14px;
+        height: 30px;
+      }
+    }
+
+
+  }
+}

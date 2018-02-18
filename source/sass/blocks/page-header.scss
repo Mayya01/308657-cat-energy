@@ -25,3 +25,35 @@
   right: 20px;
   top: 22px;
 }
+@media(min-width:768px) {
+  .page-header__wrapper {
+    max-width: 768px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    min-height: 100px;
+  }
+  .page-header__logo-cat {
+    left: 30px;
+  }
+  .page-header__logo-name {
+    left: 90px;
+    top: 15px;
+    transform: none;
+  }
+  .page-header__logo {
+    padding: 0;
+    border: none;
+    width: 30%;
+    min-height: 0;
+  }
+  .page-header__toggle {
+    display: none;
+  }
+}
+@media(min-width:1300px) {
+  .page-header__wrapper {
+    max-width: 1300px;
+    padding: 63px 40px 15px;
+  }
+}

@@ -32,3 +32,39 @@
   width: 100%;
   height: 362px;
 }
+
+@media(min-width:768px) {
+  .contacts-info__cooperation {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+  .contacts-info__title {
+    padding: 0 155px 0 40px;
+  }
+  .contacts-info__our-address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    padding: 0 40px 0 130px;
+  }
+  .contacts-info__map iframe {
+    height: 396px;
+  }
+}
+@media(min-width:1300px) {
+  .contacts-info__cooperation {
+    position: absolute;
+    width: 570px;
+    min-height: 205px;
+    background-color: #ffffff;
+    padding: 55px 35px 55px 65px;
+    left: 330px;
+    top: 93px;
+  }
+  .contacts-info__title {
+    padding: 0;
+  }
+  .contacts-info__our-address {
+    padding: 0 30px;
+  }
+}
