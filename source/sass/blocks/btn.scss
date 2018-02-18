@@ -11,6 +11,18 @@
   &--gray {
     background-color: $mainGrayColor;
     color: $textColor;
+    &:hover {
+      background-color: #ebebeb;
+    }
+    &:active {
+      color: #b9b9b9;
+    }
+  }
+  &:hover {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: #8fc46e;
   }
 }
 @media(min-width:768px) {
