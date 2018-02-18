@@ -1,18 +1,18 @@
 .social {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $borderGrayColor;
   border-top: 1px solid $borderGrayColor;
-  text-align: center
+  text-align: center;
+  font-size: 0;
 }
-
 .social__link {
   display: inline-block;
   text-decoration: none;
   font-size: 0;
   vertical-align: middle;
   position: relative;
-  margin: 0 18px;
+  margin: 0 19px;
   &::before {
     position: absolute;
     content: '';
@@ -46,7 +46,6 @@
     }
   }
 }
-
 @media(min-width:768px) {
   .social {
     border: none;
@@ -54,29 +53,30 @@
     width: 21%;
   }
   .social__link {
-    margin: 0 15px;
-
+    margin: 0 13px;
     &--vk {
+      width: 31px;
+      height: 16px;
       &::before {
         width: 31px;
         height: 16px;
       }
-
-
     }
     &--in {
+      width: 23px;
+      height: 23px;
       &::before {
         width: 23px;
         height: 23px;
       }
     }
     &--fb {
+      width: 14px;
+      height: 30px;
       &::before {
         width: 14px;
         height: 30px;
       }
     }
-
-
   }
 }
