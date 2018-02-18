@@ -35,11 +35,11 @@
     display: flex;
     justify-content: space-between;
     min-height: 150px;
-    padding: 60px 30px;
+    padding: 55px 30px;
   }
   .page-footer__logo,
   .page-footer__copyright {
-    padding: 0;
+    padding-top: 5px;
   }
   .page-footer__logo {
     width: 19%;
