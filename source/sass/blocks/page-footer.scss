@@ -40,6 +40,7 @@
   .page-footer__logo,
   .page-footer__copyright {
     padding-top: 5px;
+    padding-bottom: 0;
   }
   .page-footer__logo {
     width: 19%;
@@ -60,6 +61,11 @@
 @media(min-width:1300px) {
   .page-footer {
     position: relative;
+  }
+  .page-footer__social-info {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1300px;
   }
 
 }

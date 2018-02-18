@@ -264,8 +264,10 @@
     padding-right: 140px;
   }
   .examples__picture-result-wrapper {
-    width: 40%;
+    width: 44%;
     margin: 0 40px;
+    padding-top: 310px;
+    min-height: 405px;
   }
   .examples__title {
     position: absolute;
@@ -292,7 +294,7 @@
       display: flex;
     }
     span:nth-child(1) {
-      margin-right: 55px;
+      margin-right: 65px;
     }
   }
   .examples__total {
@@ -304,5 +306,9 @@
   }
   .examples__result {
     width: 37.6%;
+  }
+  .exapmles__picture {
+    top: -240px;
+    transform: translateX(-60%);
   }
 }

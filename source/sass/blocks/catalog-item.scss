@@ -57,30 +57,17 @@
     margin-bottom: 32px;
   }
   .catalog-item__img {
-    height: 230px;
+    height: 208px;
     width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    top: 60px;
     img {
       left: 50%;
       transform: translateX(-50%);
-    }
-    &--small {
-      top: 80px;
-      img {
-        width: 270px;
-        height: 290px;
-        top: -50px;
-      }
-    }
-    &--big {
-      top: 60px;
-      img {
-        width: 270px;
-        height: 300px;
-        top: -60px;
-      }
+      top: auto;
+      bottom: 0;
     }
 
   }

@@ -51,20 +51,36 @@
     height: 396px;
   }
 }
+
 @media(min-width:1300px) {
   .contacts-info__cooperation {
     position: absolute;
+    padding: 0;
     width: 570px;
     min-height: 205px;
     background-color: #ffffff;
-    padding: 55px 35px 55px 65px;
-    left: 330px;
-    top: 93px;
+    padding: 65px 35px 55px 75px;
+  }
+  .contacts-info {
+    position: relative;
+  }
+  .contacts-info__wrapper {
+    min-height: 400px;
+    position: relative;
+    z-index: 2;
+    padding-top: 95px;
+    padding-bottom: 105px;
   }
   .contacts-info__title {
     padding: 0;
   }
   .contacts-info__our-address {
-    padding: 0 30px;
+    padding: 0 20px;
+    text-align: left;
+  }
+  .contacts-info__map {
+    position: absolute;
+    top: 0;
+    z-index: 1;
   }
 }
