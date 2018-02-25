@@ -15,7 +15,6 @@
     text-align: center;
     margin-bottom: 20px;
   }
-
 }
 
 .all-items__plus-btn {
@@ -31,7 +30,6 @@
     width: 30px;
     transform: translateX(-50%);
   }
-
 }
 
 .all-items__show-more {
@@ -57,7 +55,6 @@
   font-weight: 400;
   margin-top: 0;
   position: relative;
-
 }
 
 .all-items__presents {
@@ -75,7 +72,7 @@
   background: url(../img/gift-photo-mobile@1x.jpg) no-repeat;
   padding: 188px 20px 50px 20px;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image:  url(../img/gift-photo-mobile@2x.jpg);
+    background-image: url(../img/gift-photo-mobile@2x.jpg);
     background-size: 280px auto;
   }
 }
@@ -142,7 +139,6 @@
       width: 60px;
       height: 60px;
     }
-
   }
   .all-items__show-more {
     font-size: 20px;
@@ -187,7 +183,6 @@
       background-image: url(../img/gift-photo-tablet@2x.jpg);
       background-size: 708px auto;
     }
-
   }
   .all-items__presents-text {
     text-align: left;
@@ -198,6 +193,7 @@
     }
   }
 }
+
 @media(min-width:1300px) {
   .all-items__main-block {
     margin-right: -40px;
@@ -225,18 +221,19 @@
   }
   .all-items__more-block {
     max-width: 1300px;
-    padding: 60px  0px 0  0px;
+    padding: 60px 0px 80px 0px;
   }
   .all-items__flex-wrapper {
     display: flex;
-    //padding: 0 40px;
+    padding: 0 40px;
+    justify-content: space-between;
   }
   .all-items__more-item-wrapper {
-    width: 68.8%;
+    width: 73.3%;
     margin-right: 80px;
   }
   .all-items__presents {
-    width: 18.8%;
+    width: 19.8%;
     padding: 0;
   }
   .all-items__presents-wrapper {
@@ -245,8 +242,21 @@
     height: 290px;
   }
   .all-items__presents-picture {
-    padding: 10px;
+    padding: 0;
+    background-image: url(../img/gift-photo-desktop@1x.jpg);
     background-size: cover;
+    padding: 188px 30px 10px 30px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/gift-photo-desktop@2x.jpg);
+      background-size: 245px auto;
+    }
+  }
+  .all-items__presents-text {
+    text-align: center;
+    &::before {
+      top: -123px;
+      left: 52%;
+      transform: translateX(-52%);
+    }
   }
 }
-

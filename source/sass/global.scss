@@ -109,6 +109,7 @@ img {
     }
   }
 }
+
 @media(min-width:1300px) {
   .container {
     max-width: 1300px;
@@ -116,6 +117,10 @@ img {
     margin: 0 auto;
   }
   .h3-title {
+    &::after {
+      right: -70px;
+      left: -70px;
+    }
     > span {
       padding: 0 40px;
     }
