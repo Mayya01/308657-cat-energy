@@ -8,3 +8,9 @@
     padding: 0 30px;
   }
 }
+@media(min-width:1300px) {
+  .order__wrapper {
+    max-width: 1300px;
+    padding: 0;
+  }
+}

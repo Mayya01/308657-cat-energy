@@ -3,28 +3,33 @@
   max-width: 320px;
   margin: 0 auto;
 }
+
 .page-header__logo {
   min-height: 66px;
   position: relative;
   padding: 0 20px;
   border-bottom: 1px solid $colorGray;
 }
+
 .page-header__logo-cat {
   position: absolute;
   left: 20px;
   top: 10px;
 }
+
 .page-header__logo-name {
   position: absolute;
   left: 50%;
   top: 22px;
   transform: translateX(-50%);
 }
+
 .page-header__toggle {
   position: absolute;
   right: 20px;
   top: 22px;
 }
+
 @media(min-width:768px) {
   .page-header__wrapper {
     max-width: 768px;
@@ -51,9 +56,23 @@
     display: none;
   }
 }
+
 @media(min-width:1300px) {
   .page-header__wrapper {
     max-width: 1300px;
     padding: 63px 40px 15px;
+  }
+  .page-header {
+    &--background {
+      background-image: url(../img/index-background-desktop@1x.jpg);
+      background-size: 680px 694px;
+      background-repeat: no-repeat;
+      background-position: right top;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/index-background-desktop@2x.jpg);
+        background-size: 680px 694px;
+      }
+    }
+
   }
 }

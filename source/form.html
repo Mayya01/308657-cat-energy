@@ -39,30 +39,34 @@
       <div class="order__wrapper">
         <form action="https://echo.htmlacademy.ru/" class="order-form" method="get">
           <p class="order-form__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <div class="order-form__block order-form__block--first-block">
-            <div class="order-form__section">
-              <label for="form-1-1" class="order-form__label order-form__label--has-icon">Имя:<sup>*</sup></label>
-              <input type="text" class="order-form__text" id="form-1-1" placeholder="Барсик" name="name"> </div>
-            <div class="order-form__section">
-              <label for="form-1-2" class="order-form__label order-form__label--has-icon">Вес&nbsp;(кг):<sup>*</sup></label>
-              <input type="text" class="order-form__text" id="form-1-2" placeholder="7" name="weight"> </div>
-            <div class="order-form__section">
-              <label for="form-1-3" class="order-form__label">Возраст&nbsp;(лет):</label>
-              <input type="text" class="order-form__text" id="form-1-3" placeholder="7" name="age"> </div>
-          </div>
-          <div class="order-form__block order-form__block--second-block">
-            <div class="order-form__border-wrapper">
-              <div class="order-form__section-wrapper">
-                <input type="radio" class="order-form__radio" id="form-2-1" checked name="program">
-                <label for="form-2-1" class="order-form__label order-form__label-radio">Похудение</label>
-              </div>
-              <div class="order-form__section-wrapper">
-                <input type="radio" class="order-form__radio" id="form-2-2" name="program">
-                <label for="form-2-2" class="order-form__label order-form__label-radio">Набор массы</label>
-              </div>
-              <div class="order-form__section-wrapper">
-                <input type="radio" class="order-form__radio" id="form-2-3" name="program">
-                <label for="form-2-3" class="order-form__label order-form__label-radio">Не знаю (Нужен ваш совет)</label>
+          <div class="order-form__flex-block-wrapper">
+            <div class="order-form__block order-form__block--first-block">
+              <div class="order-form__section">
+                <label for="form-1-1" class="order-form__label order-form__label--has-icon">Имя:<sup>*</sup></label>
+                <input type="text" class="order-form__text" id="form-1-1" placeholder="Барсик" name="name"> </div>
+              <div class="order-form__section">
+                <label for="form-1-2" class="order-form__label order-form__label--has-icon">Вес&nbsp;(кг):<sup>*</sup></label>
+                <input type="text" class="order-form__text" id="form-1-2" placeholder="7" name="weight"> </div>
+              <div class="order-form__section">
+                <label for="form-1-3" class="order-form__label">Возраст&nbsp;(лет):</label>
+                <input type="text" class="order-form__text" id="form-1-3" placeholder="7" name="age"> </div>
+            </div>
+            <div class="order-form__block order-form__block--second-block">
+
+
+              <div class="order-form__border-wrapper">
+                <div class="order-form__section-wrapper">
+                  <input type="radio" class="order-form__radio" id="form-2-1" checked name="program">
+                  <label for="form-2-1" class="order-form__label order-form__label-radio">Похудение</label>
+                </div>
+                <div class="order-form__section-wrapper">
+                  <input type="radio" class="order-form__radio" id="form-2-2" name="program">
+                  <label for="form-2-2" class="order-form__label order-form__label-radio">Набор массы</label>
+                </div>
+                <div class="order-form__section-wrapper">
+                  <input type="radio" class="order-form__radio" id="form-2-3" name="program">
+                  <label for="form-2-3" class="order-form__label order-form__label-radio">Не знаю (Нужен ваш совет)</label>
+                </div>
               </div>
             </div>
           </div>
@@ -71,14 +75,17 @@
               <h3 class="order-form__title order-form__title--two-words h3-title h3-title--icon"><span><span>Контактные данные</span> <span> (владельца кота)</span></span>
               </h3>
             </div>
-            <div class="order-form__section">
-              <label for="form-3-1" class="order-form__label order-form__label--has-icon">E-&nbsp;mail:<sup>*</sup></label>
-              <input type="email" class="order-form__text order-form__text--email-icon" id="form-3-1" placeholder="kuklachev@gmail.com" name="email">
+            <div class="order-form__flex-section-wrapper">
+              <div class="order-form__section">
+                <label for="form-3-1" class="order-form__label order-form__label--has-icon">E-&nbsp;mail:<sup>*</sup></label>
+                <input type="email" class="order-form__text order-form__text--email-icon" id="form-3-1" placeholder="kuklachev@gmail.com" name="email">
+              </div>
+              <div class="order-form__section">
+                <label for="form-3-2" class="order-form__label order-form__label--has-icon">Телефон<sup>*</sup></label>
+                <input type="tel" class="order-form__text order-form__text--tel-icon" id="form-3-2" placeholder="8 (960) 900-60-90" name="tel">
+              </div>
             </div>
-            <div class="order-form__section">
-              <label for="form-3-2" class="order-form__label order-form__label--has-icon">Телефон<sup>*</sup></label>
-              <input type="tel" class="order-form__text order-form__text--tel-icon" id="form-3-2" placeholder="8 (960) 900-60-90" name="tel">
-            </div>
+
           </div>
           <div class="order-form__block  order-form__block--no-border">
             <div class="order-form__section-wrapper order-form__section-wrapper--title">

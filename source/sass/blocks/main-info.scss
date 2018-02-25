@@ -5,6 +5,10 @@
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/index-background-mobile@2x.jpg);
+    background-size: 320px auto;
+  }
 }
 
 .main-info__title {
@@ -78,20 +82,9 @@
   .main-info__wrapper {
     max-width: 1300px;
     padding: 0 40px;
-    position: relative;
-  }
-  .main-info__background-container {
-    background-image: url(../img/index-background-mobile@1x.jpg);
-    background-size: 680px 694px;
-    width: 680px;
-    height: 705px;
-    position: absolute;
-    right: -70px;
-    top: -135px;
-    z-index: -1;
   }
   .main-info__content-wrapper {
-    min-height: 645px;
+    min-height: 510px;
     padding-left: 80px;
   }
   .main-info__title {
@@ -105,9 +98,10 @@
   .main-info__img {
     top: 20px;
     left: 50%;
-    transform: translateX(-25%);
+    transform: translateX(-30%);
+    z-index: 10;
     img {
-      width: 510px;
+      width: 560px;
       height: 500px;
     }
   }
