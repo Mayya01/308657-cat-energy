@@ -1,26 +1,39 @@
 .order-form {
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
-
 .order-form__slogan {
   margin-top: 0;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.29;
-  padding: 0 20px;
+  padding: 0 40px 0 20px;
 }
-
 .order-form__section {
   padding: 0 20px;
   display: flex;
-  margin-bottom: 17px;
+  position: relative;
+  svg {
+    position: absolute;
+    &:active {
+      fill: $mainGreenColor;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
 }
-
+.order-form__svg-phone {
+  right: 30px;
+  top: 10px;
+}
+.order-form__svg-mail {
+  right: 35px;
+  top: 13px;
+}
 .order-form__section-wrapper {
   padding: 0 20px;
   margin-bottom: 10px;
 }
-
 .order-form__label {
   font-size: 16px;
   text-transform: uppercase;
@@ -28,25 +41,25 @@
   padding: 10px 12px 0px 0;
   color: #444444;
 }
-
 .order-form__block {
   padding: 24px 0 18px 0;
   border-bottom: 1px solid $colorGray;
-  & > :last-child {
+  & >:last-child {
     margin-bottom: 0;
   }
   &--no-border {
     border: none;
     padding-bottom: 5px;
   }
+  &--last-block {
+    padding-top: 18px;
+  }
 }
-
 .order-form__border-wrapper {
-  & > :last-child {
+  & >:last-child {
     margin-bottom: 0;
   }
 }
-
 .order-form__text {
   border: 1px solid $colorGray;
   padding: 12px 15px;
@@ -57,8 +70,13 @@
   line-height: 1.125;
   color: #444444;
   font-family: inherit;
+  &:hover {
+    border-color: #cdcdcd;
+  }
+  &:active {
+    border-color: #444444;
+  }
 }
-
 .order-form__radio {
   display: none;
   position: relative;
@@ -73,7 +91,6 @@
     border-radius: 50%;
   }
 }
-
 .order-form__label-radio {
   position: relative;
   display: block;
@@ -88,8 +105,16 @@
     border: 1px solid $colorGray;
     border-radius: 50%;
   }
+  &:hover::before {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+  &:active::before {
+    border: 2px solid $mainGreenColor;
+  }
+  &:active {
+    color: #bcbcbc;
+  }
 }
-
 .order-form__title {
   text-transform: none;
   line-height: 1;
@@ -100,7 +125,6 @@
     }
   }
 }
-
 .order-form__textarea {
   width: 100%;
   border: 1px solid $colorGray;
@@ -113,7 +137,6 @@
   height: 150px;
   font-family: inherit;
 }
-
 .order-form__checkbox {
   display: none;
   &:checked + label::after {
@@ -123,10 +146,9 @@
     width: 21px;
     height: 17px;
     left: 5px;
-    top: 5px;
+    top: 6px;
   }
 }
-
 .order-form__label-checkbox {
   padding: 7px 5px 7px 45px;
   position: relative;
@@ -140,23 +162,30 @@
     left: 0;
     top: 0;
   }
+  &:hover::before {
+    border-color: #bababa;
+  }
+  &:active::before {
+    border-color: $backgroundGray;
+  }
+  &:active {
+    color: #bcbcbc;
+  }
 }
-
 .order-form__btn {
   width: 100%;
   border: none;
   font-size: 16px;
   line-height: 1.25;
 }
-
 .order-form__required {
   text-align: center;
   font-size: 14px;
   line-height: 1.14;
   font-family: $arialFont;
   margin-bottom: 0;
+  margin-top: 20px;
 }
-
 @media(min-width:768px) {
   .order-form {
     padding-top: 32px;
@@ -170,12 +199,22 @@
   }
   .order-form__section {
     padding: 0 37px 0 44px;
-    margin-bottom: 20px
+    &:not(:last-child) {
+      margin-bottom: 20px
+    }
+  }
+  .order-form__svg-phone {
+    right: 50px;
+    top: 15px;
+  }
+  .order-form__svg-mail {
+    right: 55px;
+    top: 20px;
   }
   .order-form__label {
     font-size: 20px;
     line-height: 1;
-    padding: 12px 18px 0 0;
+    padding: 13px 17px 0 0px;
   }
   .order-form__block {
     padding: 53px 0 0px 0;
@@ -202,7 +241,7 @@
   .order-form__text {
     font-size: 20px;
     line-height: 1;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 20px;
     width: 566px;
     min-width: 495px;
   }
@@ -218,8 +257,8 @@
     &:checked + label::after {
       width: 18px;
       height: 18px;
-      left: -5px;
-      top: 10px;
+      left: -6px;
+      top: 11px;
     }
   }
   .order-form__label-radio {
@@ -293,7 +332,6 @@
     line-height: 1;
   }
 }
-
 @media(min-width:1300px) {
   .order-form__flex-block-wrapper {
     @include layaout-flex-lg;
@@ -311,6 +349,12 @@
       padding: 0;
     }
   }
+  .order-form__checkbox {
+    &:checked + label::after {
+      top: 10px;
+      left: 10px;
+    }
+}
   .order-form__text {
     width: 100%;
     min-width: 435px;
@@ -336,12 +380,17 @@
     }
   }
   .order-form__title {
-
     &--two-words {
       > span {
         padding: 0 40px;
       }
     }
-
+  }
+  .order-form__svg-phone {
+    right: 17px;
+  }
+  .order-form__svg-mail {
+    right: 20px;
+    top: 20px;
   }
 }

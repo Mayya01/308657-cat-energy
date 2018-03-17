@@ -1,8 +1,22 @@
 .navigation {
-  //display: none;
+  &--nojs {
+    & .navigation__wrapper {
+      display: block;
+    }
+  }
+  &--closed {
+    & .navigation__wrapper {
+      display: none;
+    }
+  }
+  &--open {
+    & .navigation__wrapper {
+      display: block;
+    }
+  }
 }
 
-.navigation__wrapper {}
+
 
 .navigation__list {
   list-style: none;
@@ -24,6 +38,13 @@
   a {
     color: $textColor;
     text-decoration: none;
+    &:hover {
+      color: #707070;
+    }
+		&:active {
+			color: #b7b7b7;
+		}
+
   }
 }
 
