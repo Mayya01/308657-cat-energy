@@ -29,6 +29,12 @@
   right: 20px;
   top: 22px;
 }
+.page-header__logo-tablet {
+  display: none;
+}
+.page-header__logo-desktop {
+  display: none;
+}
 
 @media(min-width:768px) {
   .page-header__wrapper {
@@ -39,12 +45,17 @@
     min-height: 100px;
   }
   .page-header__logo-cat {
-    left: 30px;
+    left: 0px;
+    top: -10px;
   }
   .page-header__logo-name {
     left: 90px;
     top: 15px;
     transform: none;
+    display: none;
+  }
+  .page-header__logo-mobile {
+    display: none;
   }
   .page-header__logo {
     padding: 0;
@@ -54,6 +65,9 @@
   }
   .page-header__toggle {
     display: none;
+  }
+  .page-header__logo-tablet {
+    display: block;
   }
 }
 
@@ -67,12 +81,24 @@
       background-image: url(../img/index-background-desktop@1x.jpg);
       background-size: 680px 694px;
       background-repeat: no-repeat;
-      background-position: 940px top;
+      background-position: 81% top;
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url(../img/index-background-desktop@2x.jpg);
         background-size: 680px 694px;
       }
     }
 
+  }
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
+    &:hover {
+      fill-opacity:0.8;
+    }
+    &:active {
+      fill-opacity:0.6;
+    }
   }
 }
