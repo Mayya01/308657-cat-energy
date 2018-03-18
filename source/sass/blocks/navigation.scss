@@ -49,6 +49,11 @@
 }
 
 @media(min-width:768px) {
+  .navigation {
+    .navigation__wrapper  {
+      display: block;
+    }
+  }
   .navigation__list {
     display: flex;
     justify-content: flex-end;
