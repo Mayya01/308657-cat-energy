@@ -3,7 +3,6 @@ var navButton = document.querySelector('.navigation-toggle');
 var navigation = document.querySelector('.navigation');
 var navigationItem = document.querySelectorAll('.navigation__item');
 
-
 navigation.classList.remove('navigation--nojs');
 navButton.addEventListener('click', function (evt) {
   if (navigation.classList.contains('navigation--closed')) {

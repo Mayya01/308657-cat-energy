@@ -111,6 +111,11 @@
 .examples__before-after {
   display: flex;
   justify-content: center;
+  span {
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
 }
 
 .examples__radio {
@@ -127,28 +132,7 @@
   margin-top: 2px;
 }
 
-.examples__radio:checked + .examples__btn {
-  position: relative;
-  &::before {
-    position: absolute;
-    content: '';
-    width: 35px;
-    height: 6px;
-    top: 6px;
-    border-radius: 5px;
-    background-color: $mainGreenColor;
-  }
-  &--before {
-    &:before {
-      left: 63px;
-    }
-  }
-  &--after {
-    &:before {
-      left: -63px;
-    }
-  }
-}
+
 
 @media(min-width:768px) {
   .examples {
@@ -326,6 +310,9 @@
   }
   .exapmles__picture {
     top: -240px;
-    transform: translateX(-60%);
+    left:-80px;
+		margin-left: 0;
+    width: 690px;
+    height: 517px;
   }
 }

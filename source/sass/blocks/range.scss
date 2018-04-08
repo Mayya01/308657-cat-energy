@@ -1,6 +1,31 @@
+.range {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  height: 14px;
+  width: 82px;
+  border-radius: 5px;
+  margin: 0 19px;
+  margin-top: 2px;
+}
+.range__toggle {
+  position: absolute;
+  background-color: $mainGreenColor;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  cursor: pointer;
+
+}
 @media(min-width:768px) {
   .range {
-    position: relative;
+    height: auto;
+    width: auto;
+    border: none;
+    background: transparent;
   }
   .range__scale {
     height: 6px;
