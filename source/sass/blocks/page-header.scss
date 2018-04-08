@@ -29,9 +29,11 @@
   right: 20px;
   top: 22px;
 }
+
 .page-header__logo-tablet {
   display: none;
 }
+
 .page-header__logo-desktop {
   display: none;
 }
@@ -78,16 +80,14 @@
   }
   .page-header {
     &--background {
-      background-image: url(../img/index-background-desktop@1x.jpg);
-      background-size: 680px 694px;
-      background-repeat: no-repeat;
-      background-position: 81% top;
+      background-image: url(../img/index-background-desktop@1x.jpg), linear-gradient(90deg, #ffffff calc(50% + 40px), #63a73b calc(50% + 40px));
+      background-repeat: no-repeat repeat;
+      background-position-x: calc(50vw + 40px), left;
+      background-size: contain;
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url(../img/index-background-desktop@2x.jpg);
-        background-size: 680px 694px;
       }
     }
-
   }
   .page-header__logo-tablet {
     display: none;
@@ -95,10 +95,10 @@
   .page-header__logo-desktop {
     display: block;
     &:hover {
-      fill-opacity:0.8;
+      fill-opacity: 0.8;
     }
     &:active {
-      fill-opacity:0.6;
+      fill-opacity: 0.6;
     }
   }
 }

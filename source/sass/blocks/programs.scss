@@ -1,6 +1,7 @@
 .programs {
   margin-top: 20px;
 }
+
 .programs__main-wrapper {
   max-width: 320px;
   margin: 0 auto;
@@ -46,7 +47,6 @@
       width: 66px;
       left: 15px;
       top: 35px;
-
     }
   }
 }
@@ -77,29 +77,41 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 1;
-  display: block;
   padding-top: 20px;
+  color: $textColor;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  &::after {
+    content: '';
+    display: inline-block;
+    background: url(../img/icon-right-arrow-verylong.svg) no-repeat;
+    width: 24px;
+    background-size: 33px auto;
+    height: 10px;
+    vertical-align: middle;
+    margin-right: -10px;
+    margin-top: -2px;
+    background-position: -10px;
+  }
   span {
-    position: relative;
-    color: $textColor;
-    &:active {
-      color: $colorHover;
-    }
+    padding-right: 20px;
+  }
+  &:hover {
     &::after {
-      position: absolute;
-      content: '';
-      background: url(../img/icon-right-arrow-long.svg) no-repeat;
-      width: 24px;
-      height: 20px;
-      left: 98px;
-      top: 5px;
+      width: 33px;
+      background-size: 33px auto;
+      background-position: center center;
     }
-    &:hover {
-      &::after {
-        width: 34px;
-        top: 7px;
-      }
+  }
+  &:active {
+    &::after {
+      background: url(../img/icon-right-arrow-verylong-gray.svg) no-repeat;
+      width: 33px;
+      background-size: 33px auto;
+      background-position: center center;
     }
+    color: #c5c6c6;
   }
 }
 
@@ -166,7 +178,10 @@
 }
 
 @media(min-width:1300px) {
-
+  .programs {
+    margin-top: 0;
+    padding-top: 80px;
+  }
   .programs__item {
     width: 46%;
     margin: 0 40px;
@@ -208,8 +223,7 @@
     max-width: 1300px;
     padding: 0 40px;
   }
-  .programs__flex-wrapper  {
+  .programs__flex-wrapper {
     @include layaout-flex-lg;
-
   }
 }

@@ -1,10 +1,12 @@
 .examples {
   margin-top: 45px;
 }
+
 .examples__title {
   margin: 0;
   margin-bottom: 26px;
 }
+
 .examples__wrapper {
   background-color: $mainGrayColor;
   max-width: 320px;
@@ -14,16 +16,19 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .examples__text {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.29;
 }
+
 .examples__results {
   display: flex;
   justify-content: space-between;
   margin-top: 22px;
 }
+
 .examples__result {
   position: relative;
   width: 45%;
@@ -32,6 +37,7 @@
   border-radius: 5px;
   margin-right: -3px;
 }
+
 .examples__result-info {
   position: absolute;
   background-color: $mainGrayColor;
@@ -42,6 +48,7 @@
   width: 90%;
   transform: translateX(-50%)
 }
+
 .examples__result-info span {
   &:first-child {
     font-size: 24px;
@@ -58,6 +65,7 @@
     margin-top: 7px;
   }
 }
+
 .examples__price {
   font-size: 14px;
   text-transform: uppercase;
@@ -65,17 +73,32 @@
   margin-top: 35px;
   text-align: center;
 }
+
 .exapmles__picture {
+  height: 100%;
   margin-bottom: 35px;
+  position: relative;
+  min-height: 230px;
   img {
-    &:last-child {
-      display: none;
-    }
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
+
+.exapmles__picture-before {
+  z-index: 1;
+}
+
+.exapmles__picture-after {
+  z-index: -1;
+}
+
+
 .examples__picture-result-wrapper {
   margin-top: 42px;
 }
+
 .examples__btn {
   border: none;
   background-color: transparent;
@@ -84,13 +107,16 @@
   line-height: 1.25;
   &::before {}
 }
+
 .examples__before-after {
   display: flex;
   justify-content: center;
 }
+
 .examples__radio {
   display: none;
 }
+
 .examples__checked-area {
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
@@ -100,6 +126,7 @@
   margin: 0 19px;
   margin-top: 2px;
 }
+
 .examples__radio:checked + .examples__btn {
   position: relative;
   &::before {
@@ -122,6 +149,7 @@
     }
   }
 }
+
 @media(min-width:768px) {
   .examples {
     margin-top: 20px;
@@ -201,28 +229,16 @@
     text-align: center;
     margin: 0;
     position: absolute;
-    top: -170px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -115px;
+    left: 52%;
+    margin-left: -50vw;
     width: 100%;
     img {
-      display: inline-block;
-      width: 620px;
-      height: 500px;
+      width: auto;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
     }
-    /*img {
-      &:first-child {
-        width: 544px;
-        height: 480px;
-      }
-    }
-    img {
-      &:last-child {
-        display: none;
-        width: 500px;
-        height: 495px;
-      }
-    }*/
   }
   .examples__picture-result-wrapper {
     background-color: $mainGrayColor;
@@ -242,6 +258,7 @@
     margin: 5px auto 0 auto;
   }
 }
+
 @media(min-width:1300px) {
   .examples__wrapper {
     padding-top: 55px;
