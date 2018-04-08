@@ -160,7 +160,7 @@
             <div class="programs__wrapper">
               <h3 class="programs__title h3-title">Похудение</h3>
               <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            </div> <a href="#" class="programs__link programs__link--has-icon"><span>Каталог Slim Каталог Slim Каталог Slim Каталог Slim Каталог Slim</span>
+            </div> <a href="#" class="programs__link programs__link--has-icon"><span>Каталог Slim</span>
 
           </a> </div>
           <div class="programs__item programs__item--gain-weight">
@@ -210,26 +210,28 @@
               </div>
             </div>
             <div class="examples__picture-result-wrapper">
+              <input class="examples__input" type="radio" id="btn-1" name="toggle" checked>
+              <input type="radio" id="btn-2" name="toggle">
               <div class="exapmles__picture">
-                <picture>
+                <picture class="exapmles__img-block" id="slider-1">
                   <source media="(min-width:1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                   <source media="(min-width:768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                   <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="242" height="232" alt="Толстый кот" class="exapmles__picture-before">
                 </picture>
-                <picture>
+                <picture class="exapmles__img-block" id="slider-2">
                   <source media="(min-width:1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                   <source media="(min-width:768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                   <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Худой кот" class="exapmles__picture-after">
                 </picture>
               </div>
               <div class="examples__before-after ">
-                <span>Было</span>
+                <label for="btn-1">Было</label>
                 <div class=" range range--line">
                   <div class="range__scale ">
                   </div>
-                  <div class="range__toggle "></div>
+                  <div class=" examples__toggle range__toggle "></div>
                 </div>
-                <span>Стало</span>
+                <label for="btn-2">Стало</label>
               </div>
             </div>
           </div>

@@ -71,10 +71,10 @@
   line-height: 1;
   padding-top: 20px;
   color: $textColor;
-  outline: 1px solid red;
   display: inline-block;
   span {
     position: relative;
+    padding-right: 40px;
     &::after {
       content: '';
       position: absolute;
@@ -83,31 +83,26 @@
       width: 24px;
       background-size: 33px auto;
       height: 10px;
-      //vertical-align: middle;
-      /*margin-left: 24px;
-      margin-top: -2px;
-      margin-right: -20px;*/
-      right: -40px;
-      top: 50%;
-      transform: translateY(-50%);
+      right: 0;
+      bottom: 10px;
       background-position: -10px;
     }
-  }
-  &:hover {
-    &::after {
-      width: 33px;
-      background-size: 33px auto;
-      background-position: center center;
+    &:hover {
+      &::after {
+        width: 33px;
+        background-size: 33px auto;
+        background-position: center center;
+      }
     }
-  }
-  &:active {
-    &::after {
-      background: url(../img/icon-right-arrow-verylong-gray.svg) no-repeat;
-      width: 33px;
-      background-size: 33px auto;
-      background-position: center center;
+    &:active {
+      &::after {
+        background: url(../img/icon-right-arrow-verylong-gray.svg) no-repeat;
+        width: 33px;
+        background-size: 33px auto;
+        background-position: center center;
+      }
+      color: #c5c6c6;
     }
-    color: #c5c6c6;
   }
 }
 @media(min-width:768px) {
